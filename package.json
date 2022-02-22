@@ -1,0 +1,22 @@
+{
+  "name": "p3",
+  "version": "1.0.0",
+  "description": "Project Periode 3",
+  "main": "index.php",
+  "scripts": {
+    "sass": "sass -w src/scss:src/css --style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://wesleybreukers-school@bitbucket.org/wesleybreukers-school/project-l2-p2.git"
+  },
+  "author": "Wesley Breukers & Simon Pras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/wesleybreukers-school/project-l2-p2/issues"
+  },
+  "homepage": "https://bitbucket.org/wesleybreukers-school/project-l2-p2#readme",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}
