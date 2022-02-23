@@ -1,3 +1,3 @@
 <div id="footer">
-== copyright rra ==
+ == copyright rra ==
 </div>

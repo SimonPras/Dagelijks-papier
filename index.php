@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="https://cdn.vertcode.dev/hexaframework/css/vcd-commons.min.css"/>
     <link rel="stylesheet" href="./src/css/hamburger.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="shortcut icon" href="./img/favicon (3).ico" type="image/x-icon">
 </head>
 <body>
     <?php include("./src/php/components/navbar.php") ?>
-    <?php include("./src/php/components/footer.php") ?>
     <section>
         test
     </section>
     <script src="./src/js/navbar.js"></script>
+    <div class="col-12">
+        <?php include("./src/php/components/footer.php") ?>
+    </div>
 </body>
 </html>

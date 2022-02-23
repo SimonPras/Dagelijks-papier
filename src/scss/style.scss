@@ -78,3 +78,12 @@ header {
         }
     }
 }
+#footer{
+    min-height: 3em;
+    background-color: teal;
+    color:white;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
