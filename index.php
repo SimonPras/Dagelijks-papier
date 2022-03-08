@@ -19,18 +19,31 @@
     <section>
         <?php include("./connect.php") ?>
         <div class="row">
-            <div class="col-3 border">
+            <div class="col-12 border-25 bg-grey">
+                <div class="col-6">
+                    <img src=
+                    "
+                    <?php 
+                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 1';
+                    $query = mysqli_query($conn, $sql);
+                    while ($row = mysqli_fetch_array($query)) 
+                    echo $row['img'] ?>
+                    ">
+                </div>
+                <div class="col-6">
                 <?php 
-                $sql = 'select * from posts LIMIT 1';
+                $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 1';
                 $query = mysqli_query($conn, $sql);
                 while ($row = mysqli_fetch_array($query)) 
                 {
+                echo $row['redacteur'];
+                echo '<br>';
                 echo $row['titel'];
+                echo '<br>';
+                echo $row['content'];
                 }
                 ?>
-            </div>
-            <div class="col-3 border">
-                <img src="./img/him.png" alt="">
+                </div>
             </div>
         </div>
         <div class="row">
