@@ -17,7 +17,30 @@
 <body>
     <?php include("./src/php/components/navbar.php") ?>
     <section>
-        test
+        <?php include("./connect.php") ?>
+        <div class="row">
+            <div class="col-3 border">
+                <?php 
+                $sql = 'select * from posts LIMIT 1';
+                $query = mysqli_query($conn, $sql);
+                while ($row = mysqli_fetch_array($query)) 
+                {
+                echo $row['titel'];
+                }
+                ?>
+            </div>
+            <div class="col-3 border">
+                <img src="./img/him.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <img src="./img/him.png" alt="">
+            </div>
+            <div class="col-6">
+                <img src="./img/him.png" alt="">
+            </div>
+        </div>
     </section>
     <script src="./src/js/navbar.js"></script>
     <div class="col-12">
