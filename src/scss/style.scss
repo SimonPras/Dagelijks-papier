@@ -79,16 +79,17 @@ header {
     }
 }
 #footer{
-    min-height: 3em;
+    min-height: 4em;
     background-color: teal;
     color:white;
     text-align: center;
     position: fixed;
     width: 100vw;
     bottom: 0;
+    border-radius: 25px 0px 0px 0px;
 }
 .border-25 {
-    border-radius: 25%;
+    border-radius: 25px 25px 25px 25px;
 }
 .bg-grey
 {
