@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-6 displayblock">
                     <?php 
-                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 2,1';
+                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 3,1';
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     {
