@@ -116,8 +116,29 @@ header {
     width: 83%;
     height: 40vh;
     font-size: 200%;
+    img
+    {
+        max-height: 35vh;
+        max-width: 50vw;
+    }
 }
 .floatl
 {
     float: left;
+}
+
+.displayblock
+{
+    display: block;
+}
+
+.smalltxt
+{
+    font-size: 0.6em;
+}
+
+.m0tb
+{
+    margin-top: 0;
+    margin-bottom: 0;
 }

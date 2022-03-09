@@ -21,7 +21,7 @@
         <div class="row">
             <div class="col-12 border-25 bg-grey largepost">
                 <div class="col-6">
-                    <img src=
+                    <img class="border-25" src=
                     "
                     <?php 
                     $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 1';
@@ -30,19 +30,17 @@
                     echo $row['img'] ?>
                     ">
                 </div>
-                <div class="col-6">
-                <?php 
-                $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 1';
-                $query = mysqli_query($conn, $sql);
-                while ($row = mysqli_fetch_array($query)) 
-                {
-                echo $row['redacteur'];
-                echo '<br>';
-                echo $row['titel'];
-                echo '<br>';
-                echo $row['content'];
-                }
-                ?>
+                <div class="col-6 displayblock">
+                    <?php 
+                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 1';
+                    $query = mysqli_query($conn, $sql);
+                    while ($row = mysqli_fetch_array($query)) 
+                    {
+                    echo '<span class="smalltxt">' . $row['redacteur'] . '</span class="smalltxt">';
+                    echo '<h2 class="m0tb">' . $row['titel'] . '</h2>';
+                    echo '<span class="m0tb">' . $row['content'] . '</span>';
+                    }
+                    ?>
                 </div>
             </div>
         </div>
