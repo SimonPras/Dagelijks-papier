@@ -114,13 +114,19 @@ header {
 .largepost
 {
     width: 83%;
-    height: 40vh;
+    height: 40%;
     font-size: 200%;
+    overflow: hidden;
+    span
+    {
+        margin-top: 20px;
+    }
+
     .col-6
     {
     img
     {
-        height: 35vh;
+        height: 80%;
         width: auto;
     }
 }
@@ -128,8 +134,13 @@ header {
 .smallpost
 {
     max-width: 35%;
-    height: 40vh;
+    height: 20rem;
     font-size: 200%;
+    overflow: hidden;
+    img{
+        height: 80%;
+        width: auto;
+    }
 }
 
 .floatl
