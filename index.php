@@ -97,7 +97,7 @@
         </div>
     </section>
     
-    <a class="btn" href="./post.php">create post</a>
+    
     
     <script src="./src/js/navbar.js"></script>
     <div class="col-12">
