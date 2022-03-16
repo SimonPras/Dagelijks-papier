@@ -96,12 +96,13 @@
             </div>
         </div>
     </section>
-    <br><br><br>
+    
     <a class="btn" href="./post.php">create post</a>
-    <br><br><br><br><br><br>
+    
     <script src="./src/js/navbar.js"></script>
     <div class="col-12">
-        <?php include("./src/php/components/footer.php") ?>
+       <!--include("./src/php/components/footer.php") ?>-->
     </div>
+               
 </body>
 </html>

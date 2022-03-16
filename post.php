@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <?php include("./navbar.php")?>
     <div class="mb-3">
     <form action="create.php" method="post">
     <label for="inputtitel">Post titel</label>
