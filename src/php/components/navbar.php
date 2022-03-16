@@ -2,8 +2,8 @@
     <h3>Dagelijks Papier</h3>
     <nav>
         <ul class="dp-flex">
-            <li><a href="">Home</a></li>
-            <li><a href="">Archief</a></li>
+            <li><a href="./index.php">Home</a></li>
+            <li><a href="./archief.php">Archief</a></li>
             <li><a href="">Login</a></li>
             <li><a href="">Register</a></li>
         </ul>

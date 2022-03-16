@@ -113,6 +113,7 @@ header {
 }
 .largepost
 {
+    max-height: 50vh;
     width: 83%;
     height: 40%;
     font-size: 200%;
@@ -162,4 +163,13 @@ header {
 {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.archive{
+    .largepost{
+        height: 100vh;
+        img{
+            height: 100%;
+        }
+    }
 }

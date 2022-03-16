@@ -24,7 +24,7 @@
                     <img class="border-25" src=
                     "
                     <?php 
-                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 1';
+                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 0, 1';
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     echo $row['img'] ?>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="col-6 displayblock">
                     <?php 
-                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 1';
+                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 0, 1';
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     {
@@ -51,7 +51,7 @@
                     <img class="border-25" src=
                     "
                     <?php 
-                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 2,1';
+                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 1,1';
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     echo $row['img'] ?>
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col-6 displayblock">
                     <?php 
-                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 2,1';
+                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 1,1';
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     {
@@ -75,7 +75,7 @@
                     <img class="border-25" src=
                     "
                     <?php 
-                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 3,1';
+                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 2,1';
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     echo $row['img'] ?>
@@ -83,7 +83,7 @@
                 </div>
                 <div class="col-6 displayblock">
                     <?php 
-                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 3,1';
+                    $sql = 'SELECT * FROM `posts` ORDER BY id DESC LIMIT 2,1';
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     {
