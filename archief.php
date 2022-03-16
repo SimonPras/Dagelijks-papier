@@ -25,7 +25,7 @@ $sql = "SELECT * FROM `posts` ORDER BY id DESC LIMIT 0 , 1";
 $query = mysqli_query($conn, $sql);
 while ($row = mysqli_fetch_array($query)) 
 $maxpost = $row['id'];
-echo $maxpost . ' posts aan het weergeven';
+echo $maxpost . ' posts in totaal';
 ?>
 
 

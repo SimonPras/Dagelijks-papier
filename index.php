@@ -96,6 +96,9 @@
             </div>
         </div>
     </section>
+    <br><br><br>
+    <a class="col-12 bg-grey border-25" href="">create post</a>
+    <br><br><br><br><br><br>
     <script src="./src/js/navbar.js"></script>
     <div class="col-12">
         <?php include("./src/php/components/footer.php") ?>
