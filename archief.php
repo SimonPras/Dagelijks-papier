@@ -29,7 +29,7 @@ echo $maxpost . ' posts aan het weergeven';
 ?>
 
 
-<?php for ($postindex = 0; $postindex < $maxpost; $postindex++) {?>
+<?php for ($postindex = 3; $postindex < $maxpost; $postindex++) {?>
     <br>
     <div class="row archive">
             <div class="col-12 border-25 bg-grey largepost">
