@@ -23,7 +23,7 @@
                     <label for="middle">gebruikersnaam/e-mail</label>
                     <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
                   
-                    <label for="middle">geboorte datum</label>
+                    <label for="middle">wachtwoord</label>
                     <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
 
                 <button class="btn" type="submit">Login</button>
