@@ -15,6 +15,24 @@
     <link rel="shortcut icon" href="./img/favicon (3).ico" type="image/x-icon">
 </head>
 <body>
-    
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6">
+            <form  action="./index.php?content=register_script" method="post">
+                <div class="form-group">
+                    <label for="fname">Vul uw email adres in</label>
+                    <input name="fname" type="fname" class="form-control" id="fname" aria-describedby="fname" required>
+                    
+                    <label for="middle">middlename</label>
+                    <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+        
+    </div>
+
+
+</div>
 </body>
 </html>
