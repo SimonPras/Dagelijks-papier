@@ -176,8 +176,33 @@ header {
 
 .btn
 {
-    width: 10%;
+    width: auto;
+    height: 25px;
     background-color: red;
     color: white;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 45px;
 }
+.block {
+    width: 768px;
+    height: 412px;
+    background-color: #959AA3;
+    overflow: visible;
+    border-radius: 45px;
+    text-align: center;
+  }
+.smalblock {
+    width: 768px;
+    height: 200px;
+    background-color: #959AA3;
+    overflow: visible;
+    border-radius: 45px;
+    text-align: center;
+    font-size: 200%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .normallink {
+    color: black;
+    text-decoration: none;
+  }

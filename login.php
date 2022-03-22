@@ -18,14 +18,26 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-6">
+            <div class="block">
+                <h3>Login</h3>
                     <label for="middle">gebruikersnaam/e-mail</label>
                     <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
                   
                     <label for="middle">geboorte datum</label>
                     <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
 
-                <button type="submit">Login</button>
-                <button type="submit">Wachtwoord vergeten</button>
+                <button class="btn" type="submit">Login</button>
+                <button class="btn" type="submit">Wachtwoord vergeten</button>
+</div>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6">
+            <div class="smalblock">
+                <a class="normallink" href="./register.php">Nog geen account? Registreer</a>
+            </div>    
         </div>
     </div>
 </div>
