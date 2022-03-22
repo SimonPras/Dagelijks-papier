@@ -18,16 +18,23 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-6">
-            <form  action="./index.php?content=register_script" method="post">
+            <form  action="./register_script.php" method="post">
                 <div class="form-group">
-                    <label for="fname">Vul uw email adres in</label>
+                    <label for="fname">Vul uw Voornaam in</label>
                     <input name="fname" type="fname" class="form-control" id="fname" aria-describedby="fname" required>
                     
-                    <label for="middle">middlename</label>
-                    <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
+                    <label for="middle">Vul uw Middelste naam/tussenvoegsel </label>
+                    <input name="middle" type="middle" class="form-control" id="middle" aria-describedby="middle">
                   
-                    <label for="middle">geboorte datum</label>
+                    <label for="lname">Vul uw achternaam in</label>
+                    <input name="lname" type="lname" class="form-control" id="lname" aria-describedby="lname" required>
+                    
+                    <label for="email">Vul uw e-mail adress</label>
                     <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
+
+                    <label for="password">Vul uw wachtwoord in</label>
+                    <input name="password" type="password" class="form-control" id="password" aria-describedby="password" required>
+                </div>
 
                 <button type="submit">Register</button>
             </form>

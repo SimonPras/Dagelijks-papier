@@ -19,9 +19,10 @@ switch ($_GET["alert"]) {
       echo '<div class="alert alert-danger" role="alert">
       account already active;
       header("Refresh: 3; ./index.php?content=home" );
+      </div>';
     break;
     case "noidpwhmatch" :
-      echo <div class="alert alert-danger" role="alert">
+      echo '<div class="alert alert-danger" role="alert">
       you are not registered in the database. please try again   
       </div>';
       header("Refresh: 3; ./index.php?content=home" );
@@ -42,7 +43,7 @@ switch ($_GET["alert"]) {
       echo '<div class="alert alert-danger" role="alert">
       passwords do not match.
       </div>';
-      header("Refresh: 3; ./index.php?content=activate&id=$id&pwh=$pwh");
+      header("Refresh: 3; ./activate.php?content=activate&id=$id&pwh=$pwh");
     break;
     case "nopassword" :
       echo '<div class="alert alert-danger" role="alert">
@@ -60,7 +61,7 @@ switch ($_GET["alert"]) {
       echo '<div class="alert alert-success" role="alert">
       email sent to confirm, please check your inbox.
       </div>';
-      header("Refresh: 3; ./index.php?content=Register");
+      header("Refresh: 3; ./register.php?content=Register");
   break;
     case "registererror" :
       echo '<div class="alert alert-danger" role="alert">

@@ -1,18 +1,22 @@
 <?php 
-var_dump($_POST["email"]);
+var_dump($_POST);
 
 if (empty($_POST["email"])) 
-{
-header("Location: ./index.php?content=message&alert=no-email");
-}
+
+header("Location: ./message.php?content=message&alert=no-email");
+
 
 else {
-    include("./connect_db.php");
+    include("./connect.php");
     include("./functions.php");
 
     $email = sanitize($_POST["email"]);
+    $fname = sanitize($_POST["fname"]);
+    $middle = sanitize($_POST["middle"]);
+    $lname = sanitize($_POST["lname"]);
+    $password = sanitize($_POST["password"]);
 
-    $sql = "SELECT * FROM `register` where `email` = '$email' ";
+    $sql = "SELECT * FROM `gebruikers` where `email` = '$email' ";
 
     $result = mysqli_query($conn, $sql);
 
@@ -51,7 +55,7 @@ else {
           `id`, `fname`, `middlename`, `lastname`, `email`, `password`
           )
         VALUES (
-          NULL, '$email', '$password_hash', 'customer', 0
+          NULL, '$fname', '$middle', '$lname', '$email', '$password_hash'
           )";
 
         if (mysqli_query($conn, $sql)) {
@@ -75,8 +79,8 @@ else {
               </head>
               <body>
                 <h1>Dear customer</h1>
-                <p>you have signed up to the omori website on ' . date("d-m-y") . '</p>
-                <p> click <a href="https://backendbembou.000webhostapp.com/InlogSysteemBe/index.php?content=activate&id=' . $id . '&pwh='. $password_hash .'">here</a> to active your account</p>
+                <p>you have signed up to the dagelijks papier website on ' . date("d-m-y") . '</p>
+                <p> click <a href="http://pro3/activate.php?content=activate&id=' . $id . '&pwh='. $password_hash .'">here</a> to active your account</p>
                 <p> toodles </p>
             
                 <!-- Optional JavaScript; choose one of the two! -->
@@ -100,10 +104,10 @@ else {
 
             mail($to, $subject, $message, $headers);
 
-            header("Location: ./index.php?content=message&alert=registersuccess");
+            header("Location: ./message.php?content=message&alert=registersuccess");
         }
         else{
-            header("Location: ./index.php?content=message&alert=registererror");
+            header("Location: ./message.php?content=message&alert=registererror");
         };
     }
 }
