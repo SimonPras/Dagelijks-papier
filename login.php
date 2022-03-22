@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,24 +18,15 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-6">
-            <form  action="./index.php?content=register_script" method="post">
-                <div class="form-group">
-                    <label for="fname">Vul uw email adres in</label>
-                    <input name="fname" type="fname" class="form-control" id="fname" aria-describedby="fname" required>
-                    
-                    <label for="middle">middlename</label>
+                    <label for="middle">gebruikersnaam/e-mail</label>
                     <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
                   
                     <label for="middle">geboorte datum</label>
                     <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
 
-                <button type="submit">Register</button>
-            </form>
+                <button type="submit">Login</button>
+                <button type="submit">Wachtwoord vergeten</button>
         </div>
-        
     </div>
-
-
 </div>
 </body>
-</html>
