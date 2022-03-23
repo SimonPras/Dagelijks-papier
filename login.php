@@ -21,12 +21,14 @@
         <div class="col-6">
             <div class="block">
                 <h3>Login</h3>
-                    <label for="middle">gebruikersnaam/e-mail</label>
-                    <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
-                  
-                    <label for="middle">wachtwoord</label>
-                    <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
-
+                <p>
+                <label for="email">e-mail adress</label>
+                <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
+                </p> 
+                <p>
+                    <label for="password">wachtwoord</label>
+                    <input name="password" type="password" class="form-control" id="password" aria-describedby="password" required>
+                </p>
                 <button class="btn" type="submit">Login</button>
                 <button class="btn" type="submit">Wachtwoord vergeten</button>
 </div>
