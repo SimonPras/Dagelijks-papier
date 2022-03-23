@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="./img/favicon (3).ico" type="image/x-icon">
 </head>
 <body>
+<?php include("./src/php/components/navbar.php") ?>
 <div class="container mt-5">
     <div class="row">
         <div class="col-6">
