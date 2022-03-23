@@ -36,9 +36,9 @@ switch ($_GET["alert"]) {
     break;
     case "alreadyactive" :
       echo '<div class="alert alert-danger" role="alert">
-      account already active;
-      header("Refresh: 3; ./index.php?content=home" );
+      account already active
       </div>';
+      header("Refresh: 3; ./index.php?content=home" );
     break;
     case "noidpwhmatch" :
       echo '<div class="alert alert-danger" role="alert">

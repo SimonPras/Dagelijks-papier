@@ -20,18 +20,20 @@
     <div class="row">
         <div class="col-6">
             <div class="block">
-                <h3>Login</h3>
-                <p>
-                <label for="email">e-mail adress</label>
-                <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
-                </p> 
-                <p>
-                    <label for="password">wachtwoord</label>
+            <form action="./login_script.php?content=login_script" method="post">
+                <div class="form-group">
+                    <label for="email">Enter your email address</label>
+                    <input name="email" type="email" class="form-control" id="email" aria-describedby="email" required>
+                    <small id="email" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="password">Enter your password</label>
                     <input name="password" type="password" class="form-control" id="password" aria-describedby="password" required>
-                </p>
-                <button class="btn" type="submit">Login</button>
-                <button class="btn" type="submit">Wachtwoord vergeten</button>
-</div>
+                    <small id="password" class="form-text text-muted"></small>
+                </div>
+                <button type="submit" class="btn btn-danger">Register</button>
+            </form>
+            </div>
         </div>
     </div>
 </div>
