@@ -19,6 +19,8 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-6">
+        <div class="secondblock">
+        <h3>Register</h3>
             <form  action="./register_script.php" method="post">
                 <div class="form-group">
                     <label for="fname">Vul uw Voornaam in</label>
@@ -37,7 +39,7 @@
                     <input name="password" type="password" class="form-control" id="password" aria-describedby="password" required>
                 </div>
 
-                <button type="submit">Register</button>
+                <button class="btn" type="submit">Registreer</button>
             </form>
         </div>
         
