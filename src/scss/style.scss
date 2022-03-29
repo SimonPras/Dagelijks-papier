@@ -137,7 +137,7 @@ header {
     max-width: 35%;
     height: 20rem;
     font-size: 200%;
-    overflow: hidden;
+    overflow: scroll;
     img{
         height: 80%;
         width: auto;
@@ -174,14 +174,14 @@ header {
     }
 }
 
-// .btn
-// {
-//     width: auto;
-//     height: 25px;
-//     background-color: red;
-//     color: white;
-//     border-radius: 45px;
-// }
+ .btn
+ {
+     width: auto;
+     height: 25px;
+     background-color: red;
+     color: white;
+     border-radius: 45px;
+ }
 .block {
     width: 768px;
     height: 362px;
@@ -197,6 +197,14 @@ header {
         overflow: visible;
         border-radius: 45px;
         text-align: center;
+}
+.thirdblock {
+    width: 768px;
+    height: 362px;
+    background-color: #959AA3;
+    overflow: visible;
+    border-radius: 45px;
+    text-align: center;
 }
 .smalblock {
     width: 768px;
