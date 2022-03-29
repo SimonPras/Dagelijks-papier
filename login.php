@@ -20,6 +20,7 @@
     <div class="row">
         <div class="col-6">
             <div class="block">
+            <h3>Login</h3>
             <form action="./login_script.php?content=login_script" method="post">
                 <div class="form-group">
                     <label for="email">Enter your email address</label>
@@ -31,7 +32,7 @@
                     <input name="password" type="password" class="form-control" id="password" aria-describedby="password" required>
                     <small id="password" class="form-text text-muted"></small>
                 </div>
-                <button type="submit" class="btn btn-danger">Register</button>
+                <button type="submit" class="btn btn-danger">Log in</button>
             </form>
             </div>
         </div>
