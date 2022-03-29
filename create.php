@@ -5,13 +5,10 @@
 $title = $_POST['titel'];
 $content = $_POST['content'];
 $id = $_SESSION["id"];
-
 $sql = "SELECT * FROM `gebruikers` WHERE id = $id";
 $query = mysqli_query($conn, $sql);
 while ($row = mysqli_fetch_array($query)) 
-{
 $author = $row['fname'];   // $_POST['redacteur']; 
-}
 
 $image = $_POST['foto'];
 
@@ -27,18 +24,6 @@ VALUES
 (
 NULL, '$title', '$content', '$author', '$image')
 ;";
-echo $sql;
-echo '<hr>';
-echo $id;
-echo '<hr>';
-
-$sql = "SELECT * FROM `gebruikers` WHERE id = $id";
-$query = mysqli_query($conn, $sql);
-while ($row = mysqli_fetch_array($query)) 
-{
-echo $row['fname'];
-}
-
 
 if($result = mysqli_query($conn, $sql))
 {
