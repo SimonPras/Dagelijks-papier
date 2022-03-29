@@ -18,9 +18,9 @@
 <?php include("./src/php/components/navbar.php") ?>
 <?php
 
-
 $alert = (isset($_GET["alert"]))? $_GET["alert"]: "default";
 $id = (isset($_GET["id"]))? $_GET["id"]: "";
+$email = (isset($_GET["email"]))? $_GET["email"]: "";
 $pwh = (isset($_GET["pwh"]))? $_GET["pwh"]: "";
 
 
@@ -34,14 +34,38 @@ switch ($_GET["alert"]) {
       <img src="./img/angribagel.gif">';
       header("Refresh: 3; ./index.php?content=home" );
     break;
+    case "emailnotfound" :
+      echo '<div class="alert alert-danger" role="alert">
+      email not found.   
+      </div>
+      <img src="./img/KEL.png">';
+      header("Refresh: 3; ./index.php?content=home" );
+    break;
+    case "passwordwrong" :
+      echo '<div class="alert alert-danger" role="alert">
+      your password does not match your email adress.  
+      ';
+      header("Refresh: 3; ./index.php?content=home" );
+    break;
+    case "notactivated" :
+      echo '<div class="alert alert-danger" role="alert">
+      email is not activated. please check ' . $email . ' .   
+';
+      header("Refresh: 3; ./index.php?content=home" );
+    break;
+    case "loginformempty" :
+      echo '<div class="alert alert-danger" role="alert">
+      you have not filled in both of the forms.   
+      ';
+      header("Refresh: 3; ./index.php?content=home" );
+    break;
     case "alreadyactive" :
       echo '<div class="alert alert-danger" role="alert">
-      account already active
-      </div>';
+      account already active;
       header("Refresh: 3; ./index.php?content=home" );
     break;
     case "noidpwhmatch" :
-      echo '<div class="alert alert-danger" role="alert">
+      echo <div class="alert alert-danger" role="alert">
       you are not registered in the database. please try again   
       </div>';
       header("Refresh: 3; ./index.php?content=home" );
@@ -58,11 +82,17 @@ switch ($_GET["alert"]) {
       </div>';
       header("Refresh: 3; ./index.php?content=home" );
     break;
+    case "logout" :
+      echo '<div class="alert alert-success" role="alert">
+      Logged out successfully!
+      </div>';
+      header("Refresh: 3; ./index.php?content=home" );
+    break;
     case "passwordnotequal" :
       echo '<div class="alert alert-danger" role="alert">
       passwords do not match.
       </div>';
-      header("Refresh: 3; ./activate.php?content=activate&id=$id&pwh=$pwh");
+      header("Refresh: 3; ./index.php?content=activate&id=$id&pwh=$pwh");
     break;
     case "nopassword" :
       echo '<div class="alert alert-danger" role="alert">
@@ -80,7 +110,7 @@ switch ($_GET["alert"]) {
       echo '<div class="alert alert-success" role="alert">
       email sent to confirm, please check your inbox.
       </div>';
-      header("Refresh: 3; ./register.php?content=Register");
+      header("Refresh: 3; ./index.php?content=Register");
   break;
     case "registererror" :
       echo '<div class="alert alert-danger" role="alert">

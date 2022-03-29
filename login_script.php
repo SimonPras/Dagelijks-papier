@@ -14,7 +14,7 @@ if (empty($email) || empty($password)) //check of beide velden ingevuld zijn
 else
 {
     $sql = "SELECT * FROM `gebruikers` where email='$email'";
-    echo "GEWELDIFG";
+    //echo "GEWELDIFG";
     $result = mysqli_query($conn, $sql);
     //var_dump( (bool) mysqli_num_rows($result) ); 
     if (!mysqli_num_rows($result))
@@ -43,6 +43,11 @@ else
         }
         else
         {
+
+            session_start();
+            $_SESSION["id"] = $record["id"];
+            $_SESSION["role"] = $record["role"];
+
             switch($record["role"])
             {//inlog succes
             case 'customer':

@@ -28,11 +28,11 @@
     <input placeholder="(vereist)" type="text" name="content" id="inputcontent" Required>
     </div>
 
-    <div class="mb-3">
+    <!-- <div class="mb-3">
     <form action="create.php" method="post">
     <label for="inputredacteur">redacteur</label>
     <input placeholder="(vereist)" type="text" name="redacteur" id="inputredacteur" Required>
-    </div>
+    </div> -->
 
     <div class="mb-3">
     <form action="create.php" method="post">
