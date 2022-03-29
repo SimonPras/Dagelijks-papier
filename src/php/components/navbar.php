@@ -56,9 +56,7 @@ else { $active = '';}
         
         
         
-        <li class="nav-item">
-          <a class="nav-link <?php if ($active == "History") {echo "active";} ?>" href="./archief.php?content=archief">Archief</a>
-        </li>
+        
       </ul>
       <ul class="navbar-nav ml-auto">
         <?php
@@ -67,13 +65,13 @@ else { $active = '';}
 
     switch ($_SESSION["role"]){
     case 'customer':
-      echo '<a class="nav-link '; if ($active == "Create") {echo "active";} echo'" href="./post.php?content=create">Create post</a>';
+      
     break;
-    case 'root':
-      //root btn
+    case 'author':
+        echo '<a class="nav-link '; if ($active == "Create") {echo "active";} echo'" href="./post.php?content=create">Create post</a>';
     break;
     case 'moderator':
-      //moderator btn
+        echo '<a class="nav-link '; if ($active == "Create") {echo "active";} echo'" href="./post.php?content=create">Create post</a>';
     break;
     case 'admin':
       echo '<li class="nav-item dropdown">
@@ -90,9 +88,15 @@ else { $active = '';}
     break;
     }
 
-    echo '<li class="nav-item">
-  <a class="nav-link '; if ($active == "logout") {echo "active";} echo'" href="./logout.php?content=Logout">Log out</a>
+echo '<li class="nav-item">
+<a class="nav-link '; if ($active == "History") {echo "active";} echo'" href="./archief.php?content=archief">Archief</a>
 </li>';
+
+echo '<li class="nav-item">
+<a class="nav-link '; if ($active == "logout") {echo "active";} echo'" href="./logout.php?content=Logout">Log out</a>
+</li>';
+
+
     
   } 
   else
