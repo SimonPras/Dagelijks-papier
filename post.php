@@ -15,6 +15,7 @@
     <link rel="shortcut icon" href="./img/favicon (3).ico" type="image/x-icon">
 </head>
 <body>
+<div class="thirdblock">
 <?php include("./src/php/components/navbar.php") ?>
     <div class="mb-3">
     <form action="create.php" method="post">
@@ -42,6 +43,6 @@
 
     <div class="mb-3">
     <input class="btn" type="submit" value="SUBMIT">
-
+</div>
 </body>
 </html>
