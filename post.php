@@ -41,7 +41,7 @@
     </div>
 
     <div class="mb-3">
-    <input class="" type="submit" value="SUBMIT">
+    <input class="btn" type="submit" value="SUBMIT">
 
 </body>
 </html>
