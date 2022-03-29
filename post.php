@@ -15,8 +15,8 @@
     <link rel="shortcut icon" href="./img/favicon (3).ico" type="image/x-icon">
 </head>
 <body>
-<div class="thirdblock">
 <?php include("./src/php/components/navbar.php") ?>
+<div class="thirdblock">
     <div class="mb-3">
     <form action="create.php" method="post">
     <label for="inputtitel">Post titel</label>
