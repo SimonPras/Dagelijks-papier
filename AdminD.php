@@ -24,14 +24,14 @@ $query = mysqli_query($conn, $sql);
 ?>
 
 <table>
-  <tr>
+  <!-- <tr>
     <th>ID</th>
     <th>Voornaam</th>
     <th>Tussenvoegsel</th>
     <th>Achternaam</th>
     <th>E-mail</th>
     <th>Rol</th>
-  </tr>
+  </tr> -->
 
 <?php
 
