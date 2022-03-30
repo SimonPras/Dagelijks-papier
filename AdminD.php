@@ -38,12 +38,14 @@ $query = mysqli_query($conn, $sql);
   while ($row = mysqli_fetch_array($query)) 
   {
     echo ' <tr> 
-    <td>'.$row['id'].'</td>
     <td>'.$row['fname'].'</td>
     <td>'.$row['middlename'].'</td>
     <td>'.$row['lastname'].'</td>
     <td>'.$row['email'].'</td>
     <td>'.$row['role'].'</td>
+    <td>'.$row['id'].'</td>
+    
+    
 
     <td> <a href="edituser.php?id='.$row['id'].'">  Edit  </a> <a href="ban.php?id='.$row['id'].'">  Ban  </a> </td>
 

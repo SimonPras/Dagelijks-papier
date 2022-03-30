@@ -34,4 +34,9 @@ $record = mysqli_fetch_assoc($result); ?>
 <input value="<?php echo $record['active']; ?>" placeholder="(vereist)" type="text" name="active" id="active" Required>
 <br>
 
+<br>
+<label for="">id to edit</label>
+<input value="<?php echo $record['id']; ?>" placeholder="(vereist)" type="text" name="id" id="id" Required>
+<br>
+
 <input class="Confirmbtn" type="submit" value="verander">
