@@ -47,7 +47,7 @@ $query = mysqli_query($conn, $sql);
     
     
 
-    <td> <a href="edituser.php?id='.$row['id'].'">  Edit  </a> <a href="ban.php?id='.$row['id'].'">  Ban  </a> </td>
+    <td> <a href="edituser.php?id='.$row['id'].'">  Edit </td> <td> </a> <a href="ban.php?id='.$row['id'].'">  Ban  </a> </td>
 
     </tr>';
   }
