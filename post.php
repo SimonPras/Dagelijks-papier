@@ -15,9 +15,41 @@
     <link rel="shortcut icon" href="./img/favicon (3).ico" type="image/x-icon">
 </head>
 <body>
+<!-- <div class="thirdblock"> -->
 <?php include("./src/php/components/navbar.php") ?>
-<div class="thirdblock">
-    <div class="mb-3">
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-6">
+            <div class="block">
+            <h3>Create post</h3>
+            <form action="./create.php" method="post">
+                <div class="form-group">
+                    <label for="titel">Post titel</label>
+                    <input name="titel" type="titel" class="form-control" id="titel" aria-describedby="titel" required>
+                    <small id="titel" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="content">Post content</label>
+                    <input name="content" type="content" class="form-control" id="content" aria-describedby="content" required>
+                    <small id="content" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                    <label for="foto">adres van afbeelding</label>
+                    <input name="foto" type="foto" class="form-control" id="foto" aria-describedby="foto">
+                    <small id="foto" class="form-text text-muted"></small>
+                </div>
+                <button type="submit" class="btn btn-danger">Verstuur</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container mt-5">
+    <div class="row">
+        <div class="col-6">
+            <div class="block">
     <form action="create.php" method="post">
     <label for="inputtitel">Post titel</label>
     <input placeholder="(vereist)" type="text" name="titel" id="inputtitel" Required>
@@ -29,11 +61,7 @@
     <input placeholder="(vereist)" type="text" name="content" id="inputcontent" Required>
     </div>
 
-    <!-- <div class="mb-3">
-    <form action="create.php" method="post">
-    <label for="inputredacteur">redacteur</label>
-    <input placeholder="(vereist)" type="text" name="redacteur" id="inputredacteur" Required>
-    </div> -->
+    
 
     <div class="mb-3">
     <form action="create.php" method="post">
@@ -43,6 +71,6 @@
 
     <div class="mb-3">
     <input class="btn" type="submit" value="SUBMIT">
-</div>
+</div> -->
 </body>
 </html>
