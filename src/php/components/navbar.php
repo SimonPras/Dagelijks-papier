@@ -74,15 +74,14 @@ else { $active = '';}
         echo '<a class="nav-link '; if ($active == "Create") {echo "active";} echo'" href="./post.php?content=create">Create post</a>';
     break;
     case 'admin':
-      echo '<li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle '; if ($active == "a-Users" || $active == "a-ResetPassword") {echo "active";} echo'" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Admin
-      </a>
-      <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-        <li><a class="dropdown-item '; if ($active == "a-Users") {echo "active";} echo'" href="./index.php?content=a-Users">a-Users</a></li>
-        <li><a class="dropdown-item '; if ($active == "AdminDashboard") {echo "active";} echo'" href="./index.php?content=AdminDashboard">Admin dashboard</a></li>
-      </ul>
-    </li>';
+        echo '<li class="nav-item">
+        <a class="nav-link '; if ($active == "Create") {echo "active";} echo'" href="./post.php?content=create">Create post</a>
+      </li>';
+      
+      echo '<li class="nav-item floatr">
+        <a class="nav-link '; if ($active == "AdminDashboard") {echo "active";} echo'" href="./AdminD.php?content=Dashboard">Admin Dashboard</a>
+        </li>';
+
     break;
     default: 
     break;
