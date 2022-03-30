@@ -29,9 +29,9 @@
                     <input name="titel" type="titel" class="form-control" id="titel" aria-describedby="titel" required>
                     <small id="titel" class="form-text text-muted"></small>
                 </div>
-                <div class="form-group post-content">
+                <div class="form-group posst-content">
                     <label for="content">Post content</label>
-                    <input name="content" type="content" class="form-control" id="content" aria-describedby="content" required>
+                    <input name="content" type="content" class="form-control post-content" id="content" aria-describedby="content" required>
                     <small id="content" class="form-text text-muted"></small>
                 </div>
                 <div class="form-group">

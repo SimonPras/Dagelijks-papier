@@ -20,6 +20,7 @@
         <?php include("./connect.php") ?>
         <div class="row">
             <div class="col-12 border-25 bg-grey largepost">
+                
                 <div class="col-6">
                     <img class="border-25" src=
                     "
