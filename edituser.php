@@ -50,6 +50,11 @@ $record = mysqli_fetch_assoc($result); ?>
                     <input value="<?php echo $record['active']; ?>" placeholder="(vereist)" type="text" name="active" id="active" Required>
                     <small id="foto" class="form-text text-muted"></small>
                 </div>
+                <div class="form-group">
+                    <label for="">target id</label>
+                    <input value="<?php echo $record['id']; ?>" placeholder="(vereist)" type="text" name="id" id="id" Required>
+                    <small id="foto" class="form-text text-muted"></small>
+                </div>
                 <input class="btm btn-danger" type="submit" value="verander">
             </form>
             </div>
