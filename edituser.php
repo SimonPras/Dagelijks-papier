@@ -13,7 +13,7 @@ $record = mysqli_fetch_assoc($result); ?>
 <?php $id = $_GET['id']; ?>
 
 <?php echo $record['fname']; ?>
-
+<div class="block">
 <form action="./updatescriptu.php" method="post">
 <label for="">voornaam</label>
 <input value="<?php echo $record['fname']; ?>" placeholder="(vereist)" type="text" name="fname" id="fname" Required>
@@ -40,3 +40,4 @@ $record = mysqli_fetch_assoc($result); ?>
 <br>
 
 <input class="Confirmbtn" type="submit" value="verander">
+</div>
