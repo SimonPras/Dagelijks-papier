@@ -1,18 +1,18 @@
-<?php include("./src/php/components/navbar.php") ?>
-<?php include("./connect.php") ?>
+<?php include("./connect_db.php") ?>
 <?php var_dump($_POST);
 
 $id = $_POST['id'];
-$fname = $_POST['fname'];
-$mname = $_POST['mname'];
-$lname = $_POST['lname'];
 $email = $_POST['email'];
-$active = (int)($_POST['active']);
+$password = $_POST['password'];
+$active = ($_POST['active']);
 $role = $_POST['role'];
+var_dump($active);
+$activeint = (int) $active;
+var_dump($activeint);
 
-
-$sql = "UPDATE `gebruikers` SET `Fname` = '$fname', `middlename` = '$mname', `lastname` = '$lname', `email` = '$email', `role` = '$role', `active` = '$active' WHERE `id` = $id;";
+echo "<br>";
+$sql = "UPDATE `register` SET `email` = '$email', `password` = '$password', `role` = '$role', `email` = '$email', `role` = '$role', `activated` = $activeint WHERE `id` = $id;";
 mysqli_query($conn, $sql);
-//header("Location: ./admind");
+header("Location: ./index.php?content=a-Users");
 echo $sql;
 ?>
