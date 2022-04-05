@@ -22,7 +22,7 @@
 $sql = "SELECT * FROM `gebruikers` ORDER BY id DESC ";
 $query = mysqli_query($conn, $sql);
 ?>
-
+<div class="row">
 <table>
   <!-- <tr>
     <th>ID</th>
@@ -66,5 +66,6 @@ while ($row = mysqli_fetch_array($query))
 
 
 <?php } ?>
+</div>
 </body>
 </html>
