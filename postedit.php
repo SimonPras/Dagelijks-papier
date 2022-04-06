@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <style>
+        .archive { 
+            width: 70%;
+            
+        }
+    </style> -->
+</head>
+<body class="editpost">
+    
+
+    
+
 <?php include("./src/php/components/navbar.php") ?>
 <?php include("./connect.php") ?>
 
@@ -22,9 +37,9 @@ echo $maxpost . ' posts in totaal';
 }
 ?>
 <?php for ($postindex = 0; $postindex < $maxpost; $postindex++) {?>
-    <br>
+    <br> <a href=""></a>
     <div class="row archive">
-            <div class="col-12 border-25 bg-grey largepost">
+            <div class="col-6 border-25 bg-grey largepost">
                 <div class="col-6 displayblock">
                     <?php 
                     $sql = "SELECT * FROM `posts` ORDER BY id DESC LIMIT $postindex, 1";
@@ -41,7 +56,9 @@ echo $maxpost . ' posts in totaal';
                         {
                             echo '<span class="smalltxt">' . $row['redacteur'] . '</span class="smalltxt">';
                             echo '<h2 class="m0tb">' . $row['titel'] . '</h2>';
-                            echo '<span class="m0tb">' . $row['content'] . '</span>';
+                            echo '<a href="postediting.php?id='.$row['id'].'"> edit post  </a> ';
+                            echo "<br>";
+                            echo '<a href="deletepost.php?id='.$row['id'].'"> delete post </a> ';
                         }
                     }
                     ?>
@@ -62,3 +79,5 @@ echo $maxpost . ' posts in totaal';
         </div>
         
        <?php } ?>
+    </body>
+</html>

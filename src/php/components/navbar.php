@@ -27,7 +27,11 @@ if (isset($_GET["content"]))
 }
 else { $active = '';}
 
-$id = $_SESSION['id'];
+if (isset($_SESSION["id"]))
+{
+  $id = $_SESSION['id'];
+}
+
 
 ?>
 
