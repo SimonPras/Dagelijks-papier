@@ -39,7 +39,7 @@
                     <input name="password" type="password" class="form-control" id="password" aria-describedby="password" required>
                 </div>
 
-                <button class="btn" type="submit">Registreer</button>
+                <button class="btn btn-danger" type="submit">Registreer</button>
             </form>
         </div>
         
