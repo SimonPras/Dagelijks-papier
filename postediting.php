@@ -39,8 +39,8 @@ $record = mysqli_fetch_assoc($result); ?>
                     <small id="foto" class="form-text text-muted"></small>
                 </div>
                 <div class="form-group">
-                    <label for="foto">doel id (aangeraden niet te veranderen)</label>
-                    <input value="<?php echo $record['id']; ?>" name="id" type="id" class="form-control" id="id" aria-describedby="id">
+                    <!-- <label for="foto">doel id (aangeraden niet te veranderen)</label> -->
+                    <input value="<?php echo $record['id']; ?>" name="id" type="hidden" class="form-control" id="id" aria-describedby="id">
                     <small id="foto" class="form-text text-muted"></small>
                 </div>
                 <button type="submit" class="btn btn-danger">Verstuur</button>
