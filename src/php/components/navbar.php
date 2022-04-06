@@ -27,6 +27,8 @@ if (isset($_GET["content"]))
 }
 else { $active = '';}
 
+$id = $_SESSION['id'];
+
 ?>
 
 
@@ -80,6 +82,8 @@ else { $active = '';}
         <?php
   if (isset($_SESSION["id"])) 
   {
+    
+    //echo $id;
 
     switch ($_SESSION["role"]){
     case 'customer':
@@ -87,6 +91,7 @@ else { $active = '';}
     break;
     case 'author':
         echo '<a class="nav-link '; if ($active == "Create") {echo "active";} echo'" href="./post.php?content=create">Create post</a>';
+        echo '<a class="nav-link '; if ($active == "Create") {echo "active";} echo'" href="./postedit.php?id=' . $_SESSION["id"] . '">Autheur dashboard</a>';
     break;
     case 'moderator':
         echo '<a class="nav-link '; if ($active == "Create") {echo "active";} echo'" href="./post.php?content=create">Create post</a>';
