@@ -37,9 +37,18 @@
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     {
+
+                    if(empty($row['titel']) == true)
+                    {
+                        echo '<h2 class="m0tb"> post has been deleted </h2>';
+                    }
+                    else
+                    {
                     echo '<span class="smalltxt">' . $row['redacteur'] . '</span class="smalltxt">';
                     echo '<h1 class=""><strong>' . $row['titel'] . '</h1></strong>';
                     echo '<span class="m0tb">' . $row['content'] . '</span>';
+                    }
+
                     }
                     ?>
                 </div>
@@ -64,9 +73,16 @@
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     {
+                        if(empty($row['titel']) == true)
+                    {
+                        echo '<h2 class="m0tb"> post has been deleted </h2>';
+                    }
+                    else
+                    {
                     echo '<span class="smalltxt">' . $row['redacteur'] . '</span class="smalltxt">';
                     echo '<h2 class="m0tb">' . $row['titel'] . '</h2>';
                     echo '<span class="m0tb">' . $row['content'] . '</span>';
+                    }
                     }
                     ?>
                 </div>
@@ -88,9 +104,15 @@
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     {
+                        if(empty($row['titel']) == true)
+                    {
+                        echo '<h2 class="m0tb"> post has been deleted </h2>';
+                    }
+                    else{
                     echo '<span class="smalltxt">' . $row['redacteur'] . '</span class="smalltxt">';
                     echo '<h2 class="m0tb">' . $row['titel'] . '</h2>';
                     echo '<span class="m0tb">' . $row['content'] . '</span>';
+                    }
                     }
                     ?>
                 </div>

@@ -42,7 +42,7 @@ echo $maxpost . ' posts in totaal';
             <div class="col-6 border-25 bg-grey largepost">
                 <div class="col-6 displayblock">
                     <?php 
-                    $sql = "SELECT * FROM `posts` ORDER BY id DESC LIMIT $postindex, 1";
+                    $sql = "SELECT * FROM `posts` WHERE redacteur = '$name' ORDER BY id DESC LIMIT $postindex, 1";
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     {
@@ -66,7 +66,7 @@ echo $maxpost . ' posts in totaal';
                 <div class="col-6">
                     <img class="border-25" src=
                     "<?php 
-                    $sql = "SELECT * FROM `posts` ORDER BY id DESC LIMIT $postindex , 1";
+                    $sql = "SELECT * FROM `posts` WHERE redacteur = '$name' ORDER BY id DESC LIMIT $postindex, 1";
                     $query = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($query)) 
                     {
